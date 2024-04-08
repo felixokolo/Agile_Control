@@ -1,0 +1,8 @@
+.channels-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+h1 {
+  color: rgb(47, 198, 236);
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agile Home Control</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript">
+
+    async function clickHandler(radio) {
+      var prop = {"channel": parseInt(radio.parentElement.getAttribute("data-channel")),
+                  "state": parseInt(radio.value)};
+    const response = await fetch("http://agile-home/", { 
+      method: 'PUT', 
+      headers: { 
+        'Content-type': 'application/json'
+      }, 
+      body: JSON.stringify([prop]) 
+    }); 
+    }
+  </script>
+</head>
+<body>
+  <h1>Agile Home Control Panel</h1>
+
+  <div class="channels-grid">
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="1">
+        <h2>Channel 1</h3>
+          <input type="radio" id="CH_1_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_1_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="2">
+        <h2>Channel 2</h3>
+          <input type="radio" id="CH_2_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_2_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="3">
+        <h2>Channel 3</h3>
+          <input type="radio" id="CH_3_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_3_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="4">
+        <h2>Channel 4</h3>
+          <input type="radio" id="CH_4_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_4_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="5">
+        <h2>Channel 5</h3>
+          <input type="radio" id="CH_5_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_5_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="6">
+        <h2>Channel 6</h3>
+          <input type="radio" id="CH_6_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_6_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="7">
+        <h2>Channel 7</h3>
+          <input type="radio" id="CH_7_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_7_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="8">
+        <h2>Channel 8</h3>
+          <input type="radio" id="CH_8_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_8_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="9">
+        <h2>Channel 9</h3>
+          <input type="radio" id="CH_9_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_9_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="10">
+        <h2>Channel 10</h3>
+          <input type="radio" id="CH_10_off" name="radioButton0" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_10_on" name="radioButton0" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="11">
+        <h2>Channel 11</h3>
+          <input type="radio" id="CH_11_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_11_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="12">
+        <h2>Channel 12</h3>
+          <input type="radio" id="CH_12_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_12_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="13">
+        <h2>Channel 13</h3>
+          <input type="radio" id="CH_13_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_13_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="14">
+        <h2>Channel 14</h3>
+          <input type="radio" id="CH_14_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_14_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="15">
+        <h2>Channel 15</h3>
+          <input type="radio" id="CH_15_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_15_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+    <div class="channel-item">
+      <form name="channel_forms" data-channel="16">
+        <h2>Channel 16</h3>
+          <input type="radio" id="CH_16_off" name="radioButton" value="0" onclick="clickHandler(this)" checked="">
+          <label for="off">OFF</label>
+          <input type="radio" id="CH_16_on" name="radioButton" value="1" onclick="clickHandler(this)">
+          <label for="on">ON</label>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>
